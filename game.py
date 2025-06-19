@@ -93,7 +93,7 @@ bullet_shooter_center = py.math.Vector2(shooting_radius, 0).rotate(-angle)
 bullet_shooter_obj = player.center + bullet_shooter_center
 bullet_object_direction = py.Rect(int(bullet_shooter_obj.x), int(bullet_shooter_obj.y), 3, 3)
 
-pistoli = py.image.load(r"pistoli_paixnidi.jpg").convert()
+pistoli = py.image.load(r"assets\pistoli_paixnidi.jpg").convert()
 marios = py.image.load(r"assets\super-mario-bros-mario-kart-8-toad-mario-bros-f4a8715ee6bddde717ed2b891c123d6e.png").convert_alpha()
 jumping_mario = py.image.load(r"assets\new-super-mario-bros-u-super-mario-64-8-bit-thumbnail.png").convert()
 #jumping_mario = jumping_mario.set_colorkey((255, 255, 255), py.RLEACCEL)
