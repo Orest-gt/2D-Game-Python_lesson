@@ -17,7 +17,7 @@ py.init()
 standard_loop_delay = 0.016
 FPS = 60
 
-cap = cv2.VideoCapture(r"assets\moonside-lake-bloodborne-moewalls-com.mp4")
+#cap = cv2.VideoCapture(r"assets\moonside-lake-bloodborne-moewalls-com.mp4")
 fullscreen_mode = False
 
 screen_width = 1280
@@ -169,10 +169,10 @@ while running:
 
     now_time = py.time.get_ticks()
 
-    ret, frame = cap.read()
-    if not ret:
-        cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
-        continue
+    #ret, frame = cap.read()
+    #if not ret:
+        #cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
+        #continue
     frame = cv2.resize(frame, (screen_width, screen_height))
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     frame = cv2.transpose(frame)
@@ -393,7 +393,7 @@ while running:
 print(f"\nThanks for playing the game {nametag}!\nWe hope we'll see you again!\n"
       f"Author: {__author__}\nYear: {__year__}\nVersion: {__version__}")
 
-cap.release()
+#cap.release()
 py.quit()
 sys.exit()
 
