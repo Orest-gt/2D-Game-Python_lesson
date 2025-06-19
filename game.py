@@ -17,7 +17,7 @@ py.init()
 standard_loop_delay = 0.016
 FPS = 60
 
-cap = cv2.VideoCapture(r"C:\Users\Orestis\Downloads\moonside-lake-bloodborne-moewalls-com.mp4")
+cap = cv2.VideoCapture(r"assets\moonside-lake-bloodborne-moewalls-com.mp4")
 fullscreen_mode = False
 
 screen_width = 1280
@@ -93,12 +93,12 @@ bullet_shooter_center = py.math.Vector2(shooting_radius, 0).rotate(-angle)
 bullet_shooter_obj = player.center + bullet_shooter_center
 bullet_object_direction = py.Rect(int(bullet_shooter_obj.x), int(bullet_shooter_obj.y), 3, 3)
 
-pistoli = py.image.load(r"C:\Users\Orestis\Downloads\pistoli_paixnidi.jpg").convert()
-marios = py.image.load(r"C:\Users\Orestis\Downloads\super-mario-bros-mario-kart-8-toad-mario-bros-f4a8715ee6bddde717ed2b891c123d6e.png").convert_alpha()
-jumping_mario = py.image.load(r"C:\Users\Orestis\Downloads\new-super-mario-bros-u-super-mario-64-8-bit-thumbnail.png").convert()
+pistoli = py.image.load(r"pistoli_paixnidi.jpg").convert()
+marios = py.image.load(r"assets\super-mario-bros-mario-kart-8-toad-mario-bros-f4a8715ee6bddde717ed2b891c123d6e.png").convert_alpha()
+jumping_mario = py.image.load(r"assets\new-super-mario-bros-u-super-mario-64-8-bit-thumbnail.png").convert()
 #jumping_mario = jumping_mario.set_colorkey((255, 255, 255), py.RLEACCEL)
-background_img = py.image.load(r"C:\Users\Orestis\Downloads\1920-x-1080-collection-of-my-fav-wallpapers-part-1-v0-rie6s4t6yza81.png").convert()
-finish_line_img = py.image.load(r"C:\Users\Orestis\Downloads\finish_line_img2.png").convert_alpha()
+background_img = py.image.load(r"assets\1920-x-1080-collection-of-my-fav-wallpapers-part-1-v0-rie6s4t6yza81.png").convert()
+finish_line_img = py.image.load(r"assets\finish_line_img2.png").convert_alpha()
 finish_line_img =  py.transform.smoothscale(finish_line_img, (80, 80))
 marios = py.transform.smoothscale(marios, (player_size, player_size))
 jumping_mario = py.transform.smoothscale(jumping_mario, (player_size, player_size))
